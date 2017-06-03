@@ -1,0 +1,5 @@
+db name: admin
+db password: admin
+
+email: minghan1219@gmail.com
+password: Fairytale17

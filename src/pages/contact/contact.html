@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Booking Receipt
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content text-center>
+<ion-card>
+
+    <!--<ion-item>
+      <ion-avatar item-left>
+        <img src="img/marty-avatar.png">
+      </ion-avatar>
+      <h2>Marty McFly</h2>
+      <p>November 5, 1955</p>
+    </ion-item>-->
+
+    <ion-item color="light">
+      <ion-card-title text-center>
+        BOOKING ID: {{prevData.confirmationID}}
+      </ion-card-title>
+    </ion-item>
+
+    <ion-item text-center>
+      <h2>{{prevData.type}}</h2>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="md-contact" item-left></ion-icon>
+      <h2>{{prevData.name + " " + prevData.last}}</h2>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="ios-people" item-left></ion-icon>
+      <h2>{{prevData.adult}} adult(s)</h2>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="md-calendar" item-left></ion-icon>
+      <h2>Check-In {{prevData.start}}</h2>
+      <h2>Check-Out {{prevData.end}}</h2>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="md-phone-portrait" item-left></ion-icon>
+      <h2>{{prevData.contact}}</h2>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="md-mail" item-left></ion-icon>
+      <h2>{{prevData.email}}</h2>
+    </ion-item>   
+
+    <ion-item>
+      <ion-icon name="md-card" item-left></ion-icon>
+      <h2>{{prevData.contact}}</h2>
+    </ion-item>
+
+    <p padding text-center>Thank You. Please contact us if you have problem with your booking.</p>
+
+  </ion-card>
+</ion-content>

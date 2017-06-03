@@ -1,0 +1,13 @@
+{
+  "name": "Fairy Tale",
+  "short_name": "Fairy Tale",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [{
+    "src": "assets/imgs/castle.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "background_color": "#d32f2f",
+  "theme_color": "#d32f2f"
+}

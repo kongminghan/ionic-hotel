@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Find the best room
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list *ngFor="let room of rooms">
+    <ion-card>
+      <img-loader src="{{room.img}}" useImg></img-loader>
+      <ion-card-content>
+        <ion-card-title>
+          {{room.type}}
+          <input type="hidden" value="{{room.room_id}}"/>
+          <input type="hidden" value="{{room.startDate}}"/>
+          <input type="hidden" value="{{room.endDate}}"/>
+          </ion-card-title>
+          <ion-row>
+            <ion-col>        
+              <p>
+                {{room.desc}}
+              </p>
+            </ion-col>
+            <ion-col text-right>
+              <ion-badge item-right color="secondary">Only {{room.available}} rooms available!</ion-badge>
+            </ion-col>
+          </ion-row>          
+          <ion-item-divider></ion-item-divider>
+          <ion-item-divider>
+            <ion-row justify-content-center>
+              <ion-col text-center>
+                <ion-icon name="appname-customicon2"></ion-icon><br>
+                <p>{{room.max}} Guest(s) </p>
+              </ion-col>
+              <ion-col text-center>
+                <ion-icon name="appname-customicon1"></ion-icon><br>
+                  <p>{{room.max}} Bed(s) </p>
+                </ion-col>
+              <ion-col text-center>
+                <ion-icon name="appname-customicon3"></ion-icon><br>
+                <p>RM{{room.rate}} only</p>
+              </ion-col>
+            </ion-row>
+          </ion-item-divider>
+      </ion-card-content>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+              <button ion-button icon-only clear outline item-left (click)="minusRoom()" color="danger">
+                    <ion-icon name="md-remove-circle"></ion-icon>
+                  </button>
+              <span item-left padding-left padding-right>  {{numRooms}} </span>
+              <button ion-button icon-only clear outline item-left (click)="addRoom(room.available)" color="green">
+                    <ion-icon name="md-add-circle"></ion-icon>
+              </button>
+            </ion-item>          
+        </ion-col>        
+        <ion-col text-right>
+          <button ion-button icon-left clear (click)="bookRoom(room, numRooms)" [attr.disabled]="room.available == 0? '' : null">
+            <ion-icon name="md-archive"></ion-icon>
+            <div>Book now</div>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </ion-list>
+</ion-content>

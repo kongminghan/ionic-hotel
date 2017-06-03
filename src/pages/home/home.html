@@ -1,0 +1,110 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Pick your date
+    </ion-title>
+  </ion-navbar>
+
+  <!--<ion-row class="custom-date">
+    <ion-col float-left>
+      <ion-label margin-left>
+        <ion-icon name="md-people" margin-right></ion-icon>Number of guest(s)</ion-label>
+    </ion-col>
+    <ion-col float-right>
+      <ion-row float-right>
+        <button ion-button icon-only clear text-right (click)="minusGuest()" color="danger">
+              <ion-icon name="md-remove-circle"></ion-icon>
+        </button>
+        <p> {{search.guest}} adult(s) </p>
+        <button ion-button icon-only clear text-right (click)="addGuest()" color="green">
+              <ion-icon name="md-add-circle"></ion-icon>
+        </button>
+      </ion-row>
+    </ion-col>
+  </ion-row>-->
+
+  <ion-item margin-top>
+    <ion-label item-right>
+        <ion-icon name="md-people" margin-right></ion-icon>Number of guest(s)
+    </ion-label>
+    <button ion-button icon-only clear outline item-right (click)="minusGuest()" color="danger">
+          <ion-icon name="md-remove-circle"></ion-icon>
+        </button>
+    <span item-right>{{search.guest}} adult(s)</span>
+    <button ion-button icon-only clear outline item-right (click)="addGuest()" color="green">
+          <ion-icon name="md-add-circle"></ion-icon>
+        </button>
+  </ion-item>
+
+
+<ion-item class="custom-date" margin-top>
+    <ion-label>
+    <ion-icon name="time" margin-right></ion-icon>Check-In</ion-label>
+    <ion-datetime displayFormat="HH:mm MMM D YYYY" min={{minDate}} [(ngModel)]="search.startDate" pickerFormat="HH mm D MMM YYYY" (ionChange)="onClose()"></ion-datetime>      
+</ion-item>
+
+  <ion-item class="custom-date" margin-top>
+    <ion-label>
+      <ion-icon name="timer" margin-right></ion-icon>Check-Out</ion-label>
+      <ion-datetime displayFormat="H:mm MMM D YYYY" min={{minDateEnd}} [(ngModel)]="search.endDate" pickerFormat="HH mm D MMM YYYY"></ion-datetime>                           -->
+  </ion-item>
+
+  <div text-center>
+    <button margin ion-button round (click)="searchRoom(search)">Search for good deal</button>
+  </div>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-slides pager>
+
+    <ion-slide class="card-background-page">
+      <ion-card>
+        <img src="assets/imgs/hotel8.jpg" />
+        <div class="card-title">Family Room</div>
+        <div class="card-subtitle">A room for your family's gathering</div>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide class="card-background-page">
+      <ion-card>
+        <img src="assets/imgs/hotel2.jpg" />
+        <div class="card-title">Double Room</div>
+        <div class="card-subtitle">Cozy and out from city noise</div>
+      </ion-card>
+    </ion-slide>
+
+    <!--<ion-slide class="card-background-page">
+      <ion-card>
+        <img src="assets/imgs/hotel4.jpg" />
+        <div class="card-title">Studio</div>
+        <div class="card-subtitle">41 Listings</div>
+      </ion-card>
+    </ion-slide>-->
+
+    <ion-slide class="card-background-page">
+      <ion-card>
+        <img src="assets/imgs/hotel5.jpg" />
+        <div class="card-title">Double Deluxe Room</div>
+        <div class="card-subtitle">Modern and cozy</div>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide class="card-background-page">
+      <ion-card>
+        <img src="assets/imgs/hotel6.jpg" />
+        <div class="card-title">Single Room</div>
+        <div class="card-subtitle">Artistics and peace</div>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide class="card-background-page">
+      <ion-card>
+        <img src="assets/imgs/hotel7.jpg" />
+        <div class="card-title">Suite</div>
+        <div class="card-subtitle">You have your private space</div>
+      </ion-card>
+    </ion-slide>
+
+  </ion-slides>
+</ion-content>

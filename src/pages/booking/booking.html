@@ -1,0 +1,99 @@
+<!--
+  Generated template for the BookingPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Booking Detail</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+
+    <!--<ion-item>
+      <ion-avatar item-left>
+        <img src="img/marty-avatar.png">
+      </ion-avatar>
+      <h2>Marty McFly</h2>
+      <p>November 5, 1955</p>
+    </ion-item>-->
+
+    <ion-card-content>
+      <ion-card-title>
+        Review your booking details
+      </ion-card-title>
+    </ion-card-content>
+    <img-loader src="{{img_url}}" useImg></img-loader>
+
+    <ion-item>
+      <h1>{{prevData.type}}</h1>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="md-contact" item-left></ion-icon>
+      <h2>{{prevData.name + " " + prevData.last}}</h2>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="ios-people" item-left></ion-icon>
+      <h2>{{prevData.adult}}</h2>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="md-calendar" item-left></ion-icon>
+      <h2>Check-In {{prevData.start}}</h2>
+      <h2>Check-Out {{prevData.end}}</h2>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="md-home" item-left></ion-icon>
+      <!--<h2>{{prevData.start + " - " + prevData.end}}</h2>-->
+      <h2>{{prevData.address}}</h2>
+      <h2>{{prevData.zip +" "+ prevData.city}}</h2>
+      <h2>{{prevData.country}}</h2>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="md-phone-portrait" item-left></ion-icon>
+      <h2>{{prevData.contact}}</h2>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="md-mail" item-left></ion-icon>
+      <h2>{{prevData.email}}</h2>
+    </ion-item>
+
+    <div text-center margin>
+    <button ion-button (click)="bookNow()" >
+      Book Now
+    </button>
+    </div>        
+
+    <!--<ion-row>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="thumbs-up"></ion-icon>
+          <div>12 Likes</div>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="text"></ion-icon>
+          <div>4 Comments</div>
+        </button>
+      </ion-col>
+      <ion-col center text-center>
+        <ion-note>
+          11h ago
+        </ion-note>
+      </ion-col>
+    </ion-row>-->
+
+  </ion-card>
+</ion-content>

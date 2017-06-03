@@ -1,0 +1,27 @@
+<!--
+  Generated template for the TripPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Booking History</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+   <ion-item *ngFor="let list of lists">
+    <!--<ion-avatar item-left>
+      <img src="img/avatar-finn.png">
+    </ion-avatar>-->
+    <h2 color="dark">Booking ID {{list.id}}</h2>
+    <h2>{{list.type +" Room"}}</h2>
+    <h3 color="blue">RM{{list.amount}}</h3>    
+    <h3>{{list.start +" - " + list.end}}</h3>
+  </ion-item>
+</ion-list>
+</ion-content>

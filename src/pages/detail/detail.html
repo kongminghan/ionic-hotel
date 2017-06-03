@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Personal Detail</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+    <h4>Provide us your details</h4>
+
+    <form [formGroup]="myForm">
+      <ion-item>
+        <ion-icon name="ios-contact" item-left></ion-icon>
+        <ion-input formControlName="firstName" type="text" min="4" placeholder="First name" ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="" item-left></ion-icon>
+        <ion-input formControlName="lastName" type="text" min="4" placeholder="Last name" ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="" item-left></ion-icon>
+        <ion-input formControlName="address" type="text" min="10" placeholder="Address"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="ios-home" item-left></ion-icon>
+        <ion-input type="text" min="4" placeholder="City" formControlName="city"></ion-input>
+        <ion-input type="tel" maxlength="5" placeholder="ZIP Code" formControlName="zip"></ion-input>
+        <ion-input type="text" min="4" placeholder="Country" formControlName="country"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="ios-mail" item-left></ion-icon>
+        <ion-input type="email" min="10" placeholder="Email" formControlName="email"></ion-input>
+      </ion-item>
+
+      <ion-item margin-bottom>
+        <ion-icon name="ios-phone-portrait" item-left></ion-icon>
+        <ion-input type="tel" maxlength="14" placeholder="Contact number" formControlName="phone"></ion-input>
+      </ion-item>    
+    </form>
+
+  <!--</ion-list>-->
+</ion-content>
+
+<ion-footer no-border text-center>
+  <button ion-button round margin-bottom (click)="submitDetail()" >Confirm Detail</button>
+</ion-footer>
