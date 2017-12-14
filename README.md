@@ -1,26 +1,12 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+### Hotel Booking App
 
-## How to use this template
+This is a hybrid mobile application built on top of Ionic 2 framework. This mobile application allows user to book their hotel effortlessly. PHP will be the backend of the mobile application to handle all the data query and data store.
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/driftyco/ionic2-app-base).
+### Screenshots
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/driftyco/ionic2-app-base).
-
-### With the Ionic CLI:
-
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
-
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myTabs tabs
-```
-
-Then, to run it, cd into `myTabs` and run:
-
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
-
-Substitute ios for android if not on a Mac.
-
+![Alt text](/mobile/1.png?raw=true "")
+![Alt text](/mobile/2.png?raw=true "")
+![Alt text](/mobile/3.png?raw=true "")
+![Alt text](/mobile/4.png?raw=true "")
+![Alt text](/mobile/5.png?raw=true "")
+![Alt text](/mobile/6.png?raw=true "")
