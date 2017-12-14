@@ -4,9 +4,9 @@ This is a hybrid mobile application built on top of Ionic 2 framework. This mobi
 
 ### Screenshots
 
-![Alt text](/mobile/1.PNG){:height="50%" width="50%"}
-![Alt text](/mobile/2.PNG){:height="50%" width="50%"}
-![Alt text](/mobile/3.PNG){:height="50%" width="50%"}
-![Alt text](/mobile/4.PNG){:height="50%" width="50%"}
-![Alt text](/mobile/5.PNG){:height="50%" width="50%"}
-![Alt text](/mobile/6.PNG){:height="50%" width="50%"}
+![Alt text](/mobile/1.PNG?v=4&s=200)
+![Alt text](/mobile/2.PNG)
+![Alt text](/mobile/3.PNG)
+![Alt text](/mobile/4.PNG)
+![Alt text](/mobile/5.PNG)
+![Alt text](/mobile/6.PNG)
